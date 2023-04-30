@@ -5,7 +5,8 @@
 }
 
 
- /*móviles   */
+     /*tablet */
+
  .entrada-datos{
  text-align: center;
 }
@@ -18,26 +19,28 @@
 }
 section textarea{
     margin-top: 1em;
-    max-width: 15em;
-    max-height: 13em;
+    width: 15em;
+    height: 13em;
     font-size: 2em;
     color: blue;
     text-align: center;
     border: none;
+    columns: 20;
 }
 
+.container-button{
+    padding-left: 3em;
+}
 
 .container-button button{
-    display: block;
-    margin: 0 auto;
-    margin-top: 1em;
-    width: 70%;
-
-
     border: solid 1px  blue;
     border-radius: 24px;
     color:  blue;
     padding: 1em 3em;
+    width: 70%;
+    margin-top: 1em;
+ 
+   
 }
 
 button:hover{
@@ -70,13 +73,53 @@ button:hover{
 
 
  /*tablet   */
-@media screen and (min-device-width: 769px){
-    
+ @media(min-device-width:577px){
+
+
+    .container-button button{
+        display: inline;
+        margin: 1em auto;
+       width: 40%;
+        padding: 1em;
+        text-align: center;
+     
+    }
+
+    section textarea{
+columns: 60;
+    }
+
+
+
+
 }
 
 
 
 /*portátiles    */
-@media screen and (min-device-width: 993px){
+@media (min-device-width: 993px){
     
+    section{
+        display: inline-block;
+        
+
+    }
+    .entrada-datos{
+
+       width: 70%;
+    }
+    .datos{
+        width: 25%;
+    }
+
+    .entrada-datosr{
+   
+        background-color: aqua;
+    }
+    .logo{
+        position: absolute;
+        top: 0;
+       
+    }
+
 }
