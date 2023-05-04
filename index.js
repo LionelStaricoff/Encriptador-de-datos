@@ -97,7 +97,7 @@ function vevertirClave(arr){
 
 function copyToClipBoard() {
 
-    var content = document.querySelector("#text-area");
+    var content = document.querySelector("#text-area-respuesta");
     //alert(content.value)
     content.select();
     document.execCommand("copy");

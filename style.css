@@ -17,7 +17,7 @@
  
    margin: 1em 0px;
 }
-section textarea{
+section textarea, .datos textarea{
     margin-top: 1em;
     width: 15em;
     height: 13em;
@@ -49,11 +49,23 @@ section textarea:focus{
 
 button:hover{
     background-color: blue;
-    color: gray;
+    color: rgb(255, 253, 253);
 }
 .datos{
     text-align: center;
-  
+   
+}
+
+.datos textarea{
+    position: absolute;
+    z-index: 1;
+   display: none;
+   margin: 1em auto;
+   height: 56%;
+   width: 85%;
+  margin: 2em 1em;
+
+ 
 }
 
 .datos img{
@@ -91,10 +103,15 @@ button:hover{
     }
 
     section textarea{
-columns: 60;
+       columns: 60;
     }
 
-
+    .datos textarea{
+       height: 61%;
+       width: 90%;
+       margin: 0 auto;
+       padding: 0 2em;
+    }
 
 
 }
@@ -117,14 +134,21 @@ columns: 60;
         width: 25%;
     }
 
-    .entrada-datosr{
-   
-        background-color: aqua;
-    }
-    /* .logo{
-        position: absolute;
-        top: 0;
-       
-    } */
 
+    .datos img{
+        margin: 0 auto;
+        width: 15em;
+    }
+
+    .datos p, .datos h2{
+        padding: 0;
+
+    }
+
+    .datos textarea{
+        margin: 0;
+        padding: 0;
+        height: 12em;
+        width: 25%;
+     }
 }
