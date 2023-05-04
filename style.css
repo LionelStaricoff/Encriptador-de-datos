@@ -26,6 +26,7 @@ section textarea, .datos textarea{
     text-align: center;
     border: none;
     columns: 20;
+    text-transform: lowercase;
 }
 
 
