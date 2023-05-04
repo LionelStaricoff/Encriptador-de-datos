@@ -38,36 +38,42 @@ section textarea:focus{
 }
 .container-button button{
     border: solid 1px  blue;
-    border-radius: 24px;
+    border-radius: 15px;
     color:  blue;
+    background-color: white;
     padding: 1em 3em;
     width: 70%;
     margin-top: 1em;
- 
-   
+    cursor: pointer;
+}
+
+.container-button button:first-child{
+    color:  white;
+    background-color: #0a3871;
 }
 
 button:hover{
-    background-color: blue;
-    color: rgb(255, 253, 253);
+    background-color: #0a3871;
+    color:  white;
+}
+
+.container-button button:first-child:hover{
+    color: #0a3871 ;
+    background-color: white;
 }
 .datos{
     text-align: center;
-   
-}
-
-.datos textarea{
-    position: absolute;
-    z-index: 1;
-   display: none;
-   margin: 1em auto;
-   height: 56%;
-   width: 85%;
-  margin: 2em 1em;
-
  
 }
 
+.datos textarea{
+    background: white url(img/Muñeco.png) no-repeat;
+    width: 100%;
+}
+
+.datos textarea:focus{
+background-image: url("");
+}
 .datos img{
     margin-top: 10em;
 }
@@ -80,11 +86,11 @@ button:hover{
  
 .datos button{
     margin-top: 1em;
-    width: 70%;
+    width: 100%;
     border: solid 1px  blue;
-    border-radius: 24px;
-    color:  blue;
-    padding: 1em 3em;
+    border-radius: 15px;
+    color:  #0a3871 ;
+    padding: 1em ;
 }
 
 
@@ -102,16 +108,11 @@ button:hover{
      
     }
 
-    section textarea{
+    section textarea, .datos textarea{
        columns: 60;
     }
 
-    .datos textarea{
-       height: 61%;
-       width: 90%;
-       margin: 0 auto;
-       padding: 0 2em;
-    }
+  
 
 
 }
@@ -146,9 +147,7 @@ button:hover{
     }
 
     .datos textarea{
-        margin: 0;
-        padding: 0;
-        height: 12em;
-        width: 25%;
+      
+      
      }
 }

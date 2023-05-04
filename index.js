@@ -21,8 +21,9 @@ function encriptar(){
       }
         
     }
-    let pantalla = document.querySelector(".mensaje");
-    pantalla.innerHTML='<h2 id="datoH2"> '+modificado+ '</h2>';
+    let pantalla = document.querySelector("#text-area-datos");
+    pantalla.select();
+    pantalla.value = modificado;
     entrada.value="";
   
 }
@@ -64,17 +65,19 @@ function desencriptar(){
         encrypt+=arr[i];
       }
      
-         encrypt=vevertirClave(encrypt);
+         encrypt=revertirClave(encrypt);
          modificado +=encrypt;
          encrypt="";
 
  }
- let pantalla = document.querySelector(".mensaje");
- pantalla.innerHTML='<h2 id="datoH2"> '+modificado+ '</h2>';
+
+ let pantalla = document.querySelector("#text-area-datos");
+ pantalla.select();
+ pantalla.value = modificado;
  entrada.value="";
 }
 
-function vevertirClave(arr){
+function revertirClave(arr){
   let dato=arr;
   if (arr=="enter"){
     dato="e"
@@ -97,8 +100,7 @@ function vevertirClave(arr){
 
 function copyToClipBoard() {
 
-    var content = document.querySelector("#text-area-respuesta");
-    //alert(content.value)
+    let content = document.querySelector("#text-area-datos");
     content.select();
     document.execCommand("copy");
     content.value="";
