@@ -68,6 +68,7 @@ button:hover{
 .datos textarea{
     background: white url(img/Muñeco.png) no-repeat;
     width: 100%;
+    background-position: center ;
 }
 
 .datos textarea:focus{
@@ -114,7 +115,7 @@ background-image: url("");
        columns: 60;
     }
 
-  
+    
 
 
 }
@@ -148,8 +149,5 @@ background-image: url("");
 
     }
 
-    .datos textarea{
-      
-      
-     }
+   
 }
